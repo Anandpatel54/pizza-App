@@ -18,7 +18,7 @@ export const sendVerificationEmail = async (email: string, verificationToken: st
     }
 }
 export const sendWelcomeEmail = async (email: string, name: string) => {
-    const recipient = [{ email }];
+    const recipient = [{ email: "panand054@gmail.com" }];
     const htmlContent = generateWelcomeEmailHtml(name);
     try {
         const res = await client.send({
